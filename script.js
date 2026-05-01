@@ -2,6 +2,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const navList = document.getElementById('nav-list');
 
+    if(mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    }
+
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('active');
+        });
+    });
+});document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
     // Toggle Menu
     mobileMenu.addEventListener('click', () => {
         navList.classList.toggle('active');

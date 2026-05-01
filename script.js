@@ -1,4 +1,20 @@
-// Functionality: Handle Mobile Navigation Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    // Toggle Menu
+    mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('active');
+        });
+    });
+});// Functionality: Handle Mobile Navigation Menu Toggle
 const mobileMenu = document.querySelector('#mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 

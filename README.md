@@ -18,7 +18,8 @@ This repository contains the source code for the IGB Group LLC website, built wi
 
 ## 📁 Project Structure
 igbgroupllc.com/ 
-- ├── index.html # Main landing page 
+- ├── index.html # Main landing page
+- ├── contact.html # Contact us page
 - ├── style.css # Stylesheets 
 - ├── script.js # JavaScript file 
 - ├── images/ # Images and media files 
